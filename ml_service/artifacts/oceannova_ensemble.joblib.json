@@ -1,0 +1,78 @@
+{
+  "model_version": "6.0.0-scientific-evidence-ensemble",
+  "metrics": {
+    "training_samples": 18472,
+    "normal_reference_samples": 13907,
+    "cause_training_samples": 4565,
+    "pca_components": 24,
+    "validation_balanced_accuracy": 0.9985935302390999,
+    "validation_macro_f1": 0.989376991523682,
+    "normal_fraction": 0.7528692074491121,
+    "classes": [
+      "CDOM / terrestrial influence",
+      "bloom / phytoplankton",
+      "sediment plume"
+    ],
+    "detectors": [
+      "isolation_forest",
+      "local_outlier_factor",
+      "one_class_svm",
+      "robust_mahalanobis",
+      "elliptic_envelope",
+      "autoencoder_reconstruction",
+      "pca_reconstruction"
+    ],
+    "classifiers": [
+      "RandomForestClassifier",
+      "ExtraTreesClassifier",
+      "HistGradientBoostingClassifier",
+      "MLPClassifier",
+      "SVC",
+      "Pipeline",
+      "CalibratedClassifierCV",
+      "StackingClassifier"
+    ],
+    "architecture": "PACE-aware spectral QC + normal-manifold novelty ensemble + multimodal stacked classifier + class-conditional OOD + physical spectral evidence",
+    "anomaly_threshold": 70.0,
+    "evidence_reference": "median normal-reference spectrum",
+    "training_mode": "real_pace_normal_manifold + weakly_supervised_silver_labels",
+    "dataset": "pace_real_dataset.npz",
+    "real_pace_samples": 51000,
+    "qc_passed": 50767,
+    "normal_reference_rule": "nflh at or below its 45th percentile and no silver label",
+    "silver_label_samples": 4565,
+    "silver_label_class_counts": {
+      "bloom / phytoplankton": 2112,
+      "sediment plume": 85,
+      "CDOM / terrestrial influence": 2368,
+      "mixed": 0
+    },
+    "holdout": {
+      "strategy": "most recent acquisition dates held out whole",
+      "held_out": [
+        "2025-06-01",
+        "2025-05-01"
+      ],
+      "samples": 11824,
+      "overall_flag_rate": 0.15950608930987822,
+      "normal_reference_samples": 4843,
+      "normal_reference_flag_rate": 0.03324385711335949,
+      "normal_reference_median_anomaly_score": 4.56905611602725,
+      "silver_label_samples": 1333,
+      "silver_label_flag_rate": 0.9662415603900976,
+      "silver_label_median_anomaly_score": 97.86814844968484,
+      "unlabelled_samples": 5648,
+      "unlabelled_flag_rate": 0.07737252124645892,
+      "unlabelled_median_anomaly_score": 8.015181501087945,
+      "cause_balanced_accuracy": 0.9957805907172995,
+      "cause_macro_f1": 0.9977433642239051,
+      "cause_class_counts": {
+        "CDOM / terrestrial influence": 1248,
+        "bloom / phytoplankton": 6,
+        "sediment plume": 79
+      },
+      "batch_vs_service_max_score_gap": 0.004406738407780608
+    },
+    "label_note": "Silver labels from PACE chlor_a/nflh quantiles and spectral proxies; not ground truth. The classifier also sees chlor_a/nFLH as inputs, so cause accuracy measures agreement with the labelling rule, not field accuracy."
+  }
+}

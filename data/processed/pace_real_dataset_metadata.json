@@ -1,0 +1,35 @@
+{
+  "source": "NASA PACE OCI L2 AOP",
+  "files_found": 34,
+  "files_processed": 11,
+  "samples": 13709,
+  "spectral_bands": 172,
+  "candidate_anomaly_threshold": 1.3202314376831055,
+  "candidate_anomaly_fraction": 0.03005324968998468,
+  "label_warning": "candidate_anomaly is a statistically unusual spectral signature, not field-validated ground truth.",
+  "bbox": [
+    40.0,
+    -20.0,
+    110.0,
+    25.0
+  ],
+  "max_samples_per_file": 1500,
+  "chunk_lines": 32,
+  "bad_flags": [
+    "ATMFAIL",
+    "LAND",
+    "HIGLINT",
+    "HILT",
+    "HISATZEN",
+    "STRAYLIGHT",
+    "CLDICE",
+    "HISOLZEN",
+    "LOWLW",
+    "CHLFAIL",
+    "NAVFAIL",
+    "FILTER",
+    "BOWTIEDEL",
+    "HIPOL",
+    "PRODFAIL"
+  ]
+}

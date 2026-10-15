@@ -1,0 +1,4 @@
+# Optional: only needed for the experimental spectral CNN (/cnn/* endpoints, train_cnn.py).
+# The live anomaly service and the ensemble model run without it.
+-r requirements.txt
+torch==2.8.0

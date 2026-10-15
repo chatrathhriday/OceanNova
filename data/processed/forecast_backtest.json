@@ -1,0 +1,214 @@
+{
+  "bbox": [
+    120.0,
+    -20.0,
+    137.0,
+    -4.0
+  ],
+  "start": "2026-10-08",
+  "days": 5,
+  "passes": [
+    {
+      "day": "2026-10-08",
+      "granule": "PACE_OCI.20261008T042925.L2.OC_AOP.V3_2.NRT.nc",
+      "valid_pixels": 0
+    },
+    {
+      "day": "2026-10-09",
+      "granule": "PACE_OCI.20261009T045858.L2.OC_AOP.V3_2.NRT.nc",
+      "valid_pixels": 2067,
+      "flagged_pixels": 199,
+      "patches": 4,
+      "forecasts_verified": 0
+    },
+    {
+      "day": "2026-10-10",
+      "granule": "PACE_OCI.20261010T040013.L2.OC_AOP.V3_2.NRT.nc",
+      "valid_pixels": 0
+    },
+    {
+      "day": "2026-10-11",
+      "granule": "PACE_OCI.20261011T042946.L2.OC_AOP.V3_2.NRT.nc",
+      "valid_pixels": 2023,
+      "flagged_pixels": 486,
+      "patches": 4,
+      "forecasts_verified": 4
+    },
+    {
+      "day": "2026-10-12",
+      "granule": "PACE_OCI.20261012T032601.L2.OC_AOP.V3_2.NRT.nc",
+      "valid_pixels": 126,
+      "flagged_pixels": 36,
+      "patches": 1,
+      "forecasts_verified": 1
+    }
+  ],
+  "zones_forecast": 9,
+  "verified": 5,
+  "present": 5,
+  "by_lead_day": {
+    "2": {
+      "verified": 4,
+      "present": 4
+    },
+    "1": {
+      "verified": 1,
+      "present": 1
+    }
+  },
+  "by_cause": {
+    "CDOM / terrestrial influence": {
+      "verified": 4,
+      "present": 4
+    },
+    "bloom / phytoplankton": {
+      "verified": 1,
+      "present": 1
+    }
+  },
+  "present_without_drift": {
+    "verified": 5,
+    "present": 5
+  },
+  "base_rate": {
+    "cells": 308,
+    "present": 66
+  },
+  "zones": [
+    {
+      "id": "z20261009T0458-108616",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "strong",
+      "flagged": 52,
+      "outcomes": {
+        "24": null,
+        "48": {
+          "observed_at": "2026-10-11T04:29:46Z",
+          "valid": 209,
+          "flagged": 121,
+          "fraction": 0.579,
+          "present": true,
+          "present_without_drift": true
+        },
+        "72": null
+      }
+    },
+    {
+      "id": "z20261009T0458-105006",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "strong",
+      "flagged": 29,
+      "outcomes": {
+        "24": null,
+        "48": {
+          "observed_at": "2026-10-11T04:29:46Z",
+          "valid": 36,
+          "flagged": 29,
+          "fraction": 0.806,
+          "present": true,
+          "present_without_drift": true
+        },
+        "72": null
+      }
+    },
+    {
+      "id": "z20261009T0458-107168",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "strong",
+      "flagged": 28,
+      "outcomes": {
+        "24": null,
+        "48": {
+          "observed_at": "2026-10-11T04:29:46Z",
+          "valid": 47,
+          "flagged": 31,
+          "fraction": 0.66,
+          "present": true,
+          "present_without_drift": true
+        },
+        "72": null
+      }
+    },
+    {
+      "id": "z20261009T0458-110052",
+      "cause": "bloom / phytoplankton",
+      "signal": "weak",
+      "flagged": 7,
+      "outcomes": {
+        "24": null,
+        "48": {
+          "observed_at": "2026-10-11T04:29:46Z",
+          "valid": 12,
+          "flagged": 10,
+          "fraction": 0.833,
+          "present": true,
+          "present_without_drift": true
+        },
+        "72": null
+      }
+    },
+    {
+      "id": "z20261011T0429-108616",
+      "cause": "bloom / phytoplankton",
+      "signal": "strong",
+      "flagged": 294,
+      "outcomes": {
+        "24": null,
+        "48": null,
+        "72": null
+      }
+    },
+    {
+      "id": "z20261011T0429-105726",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "strong",
+      "flagged": 62,
+      "outcomes": {
+        "24": null,
+        "48": null,
+        "72": null
+      }
+    },
+    {
+      "id": "z20261011T0429-107912",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "strong",
+      "flagged": 38,
+      "outcomes": {
+        "24": {
+          "observed_at": "2026-10-12T03:26:01Z",
+          "valid": 28,
+          "flagged": 14,
+          "fraction": 0.5,
+          "present": true,
+          "present_without_drift": true
+        },
+        "48": null,
+        "72": null
+      }
+    },
+    {
+      "id": "z20261011T0429-110772",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "moderate",
+      "flagged": 10,
+      "outcomes": {
+        "24": null,
+        "48": null,
+        "72": null
+      }
+    },
+    {
+      "id": "z20261012T0326-112950",
+      "cause": "CDOM / terrestrial influence",
+      "signal": "weak",
+      "flagged": 6,
+      "outcomes": {
+        "24": null,
+        "48": null,
+        "72": null
+      }
+    }
+  ],
+  "note": "One area and a few days: a first check of the method, not a skill score."
+}
