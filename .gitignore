@@ -32,3 +32,6 @@ data/raw/
 node_modules
 .next/
 .DS_Store
+# local AI-assistant config (kept on disk, not in the repo)
+CLAUDE.md
+.claude/
