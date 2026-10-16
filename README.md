@@ -57,3 +57,7 @@ The first satellite refresh downloads a few hundred MB of PACE data. To fill eve
 ## Data sources
 
 NASA PACE OCI L2 AOP (Earthdata), NOAA NDBC and CO-OPS buoys, Open-Meteo Marine API (currents, CC BY 4.0), Google Gemini for written explanations.
+
+## How this was built
+
+Built with AI assistance (Claude) for implementation speed; the idea, design decisions, testing and final calls are mine.
